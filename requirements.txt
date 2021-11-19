@@ -1,0 +1,4 @@
+greenlet==1.1.2
+playwright==1.16.1
+pyee==8.2.2
+websockets==10.0

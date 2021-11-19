@@ -35,7 +35,7 @@ with sync_playwright() as p:
         if "https://api.importyeti.com/api/search?q=" in response.url:
             try:
                 print(response.headers)
-                modify_data(response.json())
+                print(response.json())
             except:
                 print("<<", response.status, response.url)
 
@@ -44,3 +44,5 @@ with sync_playwright() as p:
     page.goto(url, wait_until="networkidle", timeout=120000)
     page.context.close()
     browser.close()
+
+
